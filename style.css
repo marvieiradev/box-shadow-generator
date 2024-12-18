@@ -11,6 +11,10 @@ body {
   background-color: #5d30ff;
 }
 
+label {
+  font-size: 14px;
+}
+
 .container {
   background-color: #fff;
   position: absolute;
@@ -35,4 +39,69 @@ body {
   margin: auto;
   border-radius: 70px;
   box-shadow: -6px 15px 30px 6px rgba(0, 0, 0, 0.5);
+}
+
+.settings {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 15px 25px;
+}
+
+.range-wrapper,
+#color-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.code-container {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.code-container button {
+  background-color: #5d30ff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+textarea {
+  resize: none;
+  padding: 5px;
+  border: 1px solidS#000;
+  border-radius: 5px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#color-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+input[type="color"] {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
