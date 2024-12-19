@@ -57,6 +57,7 @@ label {
 input[type="range"] {
   width: 100%;
   cursor: pointer;
+  accent-color: #5d30ff;
 }
 
 input[type="checkbox"] {
